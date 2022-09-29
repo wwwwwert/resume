@@ -1,0 +1,108 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{soulutf8}
+
+
+\setmainfont{Helvetica}
+% \setmainfont{Proxima Nova}
+% \setmainfont{Neue Haas Grotesk Display Pro}
+% \setmainfont{Univers}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\thispagestyle{empty} % убрать нумерацию
+\hyphenpenalty=10000 % убрать переносы
+
+\titleformat
+{\section}
+[hang] 
+{\bfseries\Large} % format
+{\thesection} % label
+{0.5em} % sep
+{}[\vspace{-2ex}\rule{\textwidth}{0.5pt}] % before-sep after-sep
+\titlespacing{\section}{0pc}{2ex}{0.5pc} % left - before - after spacings
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+\selectlanguage{english}
+\begin{center}
+    \Huge Dmitry Uspenskiy
+
+
+    \small
+    \begin{tabular}{ c|c|c }
+        \textbf{uspenskiydmitry@gmail.com} & \textbf{t.me/black\_chick} & \textbf{github.com/wwwwwert} \\ 
+    \end{tabular}
+\end{center}
+
+\section*{Education}
+\textbf{NRU Higher School of Economics}\dotfill \textit{September 2020 - Present} \\
+BS in Applied Mathematics and Computer Science. \\
+Current program is Data Analysis and Intelligent Systems.
+\begin{itemize}
+    \item Third year. Full-time education. Government-funded position.
+    \item \textit{Math courses studied}: Discrete Mathematics, Calculus, Linear Algebra and Geometry, 
+    Algebra, Probability Theory and Mathematical Statistics, Fundamentals of Matrix Computations; \\ [0.8ex]
+    \textit{Computer-Science courses studied}: Python, C++ Advanced, Algorithms and Data Structures, 
+    Modern Software Engineering Practices, Computer Architecture and Operating Systems. 
+\end{itemize}
+\textbf{Correspondence Physical and Technical School}\dotfill \textit{September 2019 - May 2020}
+\begin{itemize}
+    \item Advanced Math and IT classes.
+\end{itemize}
+\textbf{Lycem №1535}\dotfill \textit{September 2018 - May 2020}
+\begin{itemize}
+    \item IT class with Yandex Lyceum programming course.
+    \item Graduated with excellent and good grades.
+\end{itemize}
+
+\section*{Personal Projects}
+\begin{itemize}
+    \item \href{https://github.com/wwwwwert/structure_editor}
+    {\textbf{Program for microstructure photographs analysis and particles dimensions evaluation}} \\
+    This work was \href{https://cs.hse.ru/cppr/best_projects}{rated} as one of the best in the educational program in 2022. \\
+    {\footnotesize \textit{Frameworks used}: TKinter, OpenCV, NumPy, Seaborn \& MatPlotLib, Pandas, PyInstaller}
+
+    \item \href{https://github.com/wwwwwert/sneaker_sales_bot}{\textbf{Sneaker sales bot}} \\
+    {\footnotesize \textit{Frameworks used}: BeautifulSoup, Telegram API with pyTelegramBotAPI library}
+
+    \item \href{https://github.com/wwwwwert/footwear_page_bot}{\textbf{Footwear public page bot}} \\
+    Currently available at \href{https://vk.com/footwear_damn}{public page} \\
+    {\footnotesize \textit{Frameworks used}: VK API, Google Translator API with deep-translator library, BeautifulSoup, Pandas}
+
+\end{itemize}
+\addcontentsline{toc}{section}{Unnumbered Section}
+
+\section*{Technical Skills}
+\begin{tabular}{ l p{12cm}l }
+    \textbf{Programming Languages} & Python 3, C, C++, GNU Assembler, Bash, LaTex \\ [0.8ex]
+    \textbf{Software \& Tools} & Shell, Git, SSH, GCC, GDB, CLion, PyCharm, VS Code, Jupyter \\ [0.8ex]
+    \textbf{Technical Experience} & Computer Vision, image processing, Python GUI, 
+    data scrapping, data visualization, System calls, multithreading, messengers' API, 
+    project deployment on Amazon AWS \\ [0.8ex]
+    \textbf{Research Experience} & Matrix and sparse matrix calculations, creating mathematical models and recommender systems, 
+    image processing and restoring, iterative methods, probability and statistics, analysis and complex analysis
+\end{tabular}
+
+\section*{Additional Information}
+\begin{itemize}
+\item \textbf{Languages}: \begin{description}
+    \item English (fluent, passed Independent English Exam),
+    \item Russian (native). 
+\end{description}
+\item \textbf{Hobbies}: coding \& launching own projects; streetwear; dreadlocks
+\end{itemize}
+
+\end{document}
